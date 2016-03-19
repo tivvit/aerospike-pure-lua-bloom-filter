@@ -1,0 +1,3 @@
+[submodule "pure-lua-bloom-filter"]
+	path = pure-lua-bloom-filter
+	url = git@github.com:tivvit/pure-lua-bloom-filter.git
