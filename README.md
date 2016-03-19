@@ -35,7 +35,9 @@ Params: bin, value, conf
 Adds value to bloom filter, when already present returns 0, otherwise 1.
 
 Last param is conf, when empty defaults defined on first lines of the code are used.
+
 Default size is **10000** elements with precision **0.01** and ttl **4** hours.
+
 Configurations options are:
 - items - count of elements
 - probabilty - precision 0 > p > 1
@@ -43,10 +45,12 @@ Configurations options are:
 
 #### Query
 Params: bin, value
+
 Returns 1 if value was found and 0 if not
 
 #### Clear
 params: bin
+
 Clears whole bloom filter
 
 ### TODO
