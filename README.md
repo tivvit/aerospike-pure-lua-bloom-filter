@@ -34,13 +34,11 @@ as_client.apply(key, "bloom", "add", ["bin", value, {}])) #returns 1 if not foun
 Params: bin, value, conf
 Adds value to bloom filter, when already present returns 0, otherwise 1.
 
-Last param is conf, when empty defaults defined on first lines of the code are used.
-
-Default size is **10000** elements with precision **0.01** and ttl **4** hours.
-
-Configurations options are:
+Last param is conf, when empty defaults defined on first lines of the code are used.  
+Default size is **10000** elements with precision **0.01** and ttl **4** hours.  
+Configuration options are:
 - items - count of elements
-- probabilty - precision 0 > p > 1
+- probability - precision 0 > p > 1
 - ttl - AS ttl (0 for never) 
 
 #### Query
